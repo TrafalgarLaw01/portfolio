@@ -1,0 +1,155 @@
+{
+    "header": {
+        "home": "Inicio",
+        "work": "Proyectos",
+        "about": "Sobre",
+        "services": "Servicios",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "subtitle": "Experiencias Digitales Cinematográficas",
+        "scroll": "Desplázate para Explorar"
+    },
+    "bento": {
+        "selectedWorks": "Proyectos Seleccionados",
+        "portfolio": "Portafolio",
+        "comingSoon": "Próximamente",
+        "studio": "El Estudio",
+        "about": "Sobre",
+        "studioDesc": "Operamos en la intersección del diseño, la tecnología y el cine.\n\nCreando legados digitales para marcas que se atreven a liderar el futuro.",
+        "services": "Servicios",
+        "expertise": "Experiencia",
+        "service1": "Dirección Creativa",
+        "service2": "Implementación 3D",
+        "service3": "Desarrollo Full-Stack",
+        "contact": "Hablemos"
+    },
+    "footer": {
+        "studio": "Estudio",
+        "social": "Social",
+        "legal": "Legal",
+        "rights": "Todos los derechos reservados.",
+        "designed": "Diseñado con Stitch."
+    },
+    "about": {
+        "manifesto": {
+            "title": "CREAMOS",
+            "highlight": "LEGADOS DIGITALES",
+            "desc": "Más allá del software, construimos los cimientos del mañana. En Pontus Corp, fusionamos precisión arquitectónica con audacia creativa."
+        },
+        "philosophy": {
+            "title": "Filosofía del Estudio",
+            "desc": "Nuestro enfoque se basa en la creencia de que las interfaces digitales deben ser tan duraderas como los monumentos físicos. Descartamos lo efímero en favor de lo esencial. Cada píxel es una decisión, cada interacción una conversación."
+        },
+        "stats": {
+            "deployments": "Implementaciones",
+            "countries": "Países",
+            "years": "Años",
+            "projects": "Proyectos",
+            "awards": "Premios",
+            "clients": "Clientes"
+        },
+        "team": {
+            "title": "El Equipo",
+            "desc": "Un colectivo de expertos multidisciplinarios.",
+            "marcus": "Arquitecto Fundador",
+            "elena": "Directora de Diseño"
+        },
+        "awards": {
+            "title": "Reconocimiento",
+            "award1": "Mejor Ejecución Técnica",
+            "award2": "Líder Categoría UX/UI",
+            "award3": "Innovación en Fintech"
+        },
+        "journey": {
+            "title": "La Jornada",
+            "year1": "Génesis del Estudio",
+            "desc1": "Fundado en Neo-Tokio con la visión de redefinir la capa de interfaz.",
+            "year2": "Iniciativa Museo Digital",
+            "desc2": "Ganó el Premio Internacional por la exposición interactiva 'Historia de los Píxeles'.",
+            "year3": "Expansión a IA",
+            "desc3": "Lanzamiento de la arquitectura central Pontus-Neural para empresas globales."
+        }
+    },
+    "services": {
+        "title": "LO QUE HACEMOS",
+        "branding": {
+            "title": "Identidad de Marca",
+            "desc": "Estrategia visual que define el futuro de tu empresa."
+        },
+        "development": {
+            "title": "Desarrollo",
+            "desc": "Aplicaciones web robustas, escalables y de alto rendimiento."
+        },
+        "design": {
+            "title": "Diseño UI/UX",
+            "desc": "Interfaces intuitivas que encantan y convierten."
+        },
+        "consulting": {
+            "title": "Consultoría Tech",
+            "desc": "Auditoría y arquitectura para escalar tu negocio digital."
+        },
+        "method": {
+            "title": "El Proceso",
+            "desc": "Del caos a la claridad.",
+            "steps": {
+                "discovery": {
+                    "title": "Descubrimiento",
+                    "desc": "Inmersión profunda en objetivos, audiencia y mercado."
+                },
+                "strategy": {
+                    "title": "Estrategia",
+                    "desc": "Definiendo la hoja de ruta visual y técnica."
+                },
+                "execution": {
+                    "title": "Ejecución",
+                    "desc": "Sprints ágiles con feedback continuo para la perfección."
+                },
+                "launch": {
+                    "title": "Lanzamiento",
+                    "desc": "Pruebas rigurosas y optimización para el mundo real."
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "INICIAR UN",
+        "highlight": "PROYECTO",
+        "form": {
+            "name": "Tu Nombre (Opcional)",
+            "goal": "¿Cuál es tu objetivo?",
+            "placeholderName": "¿Cómo prefieres que te llamemos?",
+            "action": "Iniciar Chat de WhatsApp",
+            "subjects": {
+                "quote": "Quiero un presupuesto",
+                "portfolio": "Me gustó tu portafolio, quiero mi página",
+                "site": "Quiero crear un sitio desde cero",
+                "general": "¡Hola! Me gustaría discutir un proyecto"
+            }
+        },
+        "direct": {
+            "title": "Línea Directa",
+            "desc": "Consultas Generales"
+        },
+        "hubs": "Hubs Globales"
+    },
+    "work": {
+        "title": "Trabajos",
+        "highlight": "Seleccionados",
+        "filters": {
+            "all": "Todos",
+            "web": "Web",
+            "mobile": "Móvil",
+            "branding": "Marca"
+        },
+        "detail": {
+            "role": "Rol",
+            "client": "Cliente",
+            "year": "Año",
+            "stack": "Tecnología",
+            "challenge": "El Desafío",
+            "solution": "La Solución",
+            "next": "Siguiente Proyecto"
+        }
+    }
+}

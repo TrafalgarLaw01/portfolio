@@ -1,0 +1,128 @@
+{
+    "header": {
+        "home": "Início",
+        "work": "Projetos",
+        "about": "Sobre",
+        "services": "Serviços",
+        "contact": "Contato"
+    },
+    "hero": {
+        "subtitle": "Experiências Digitais Cinematográficas",
+        "scroll": "Role para Explorar"
+    },
+    "bento": {
+        "selectedWorks": "Projetos Selecionados",
+        "portfolio": "Portfólio",
+        "comingSoon": "Em Breve",
+        "aboutTitle": "Henrico G. David",
+        "aboutSubtitle": "Web Designer",
+        "aboutIntro": "Julgo um livro pela capa... Porque se ela não te impressionar, o que mais vai?",
+        "aboutDetails": "19 anos • Sistemas de Informação",
+        "services": "Serviços",
+        "expertise": "Expertise",
+        "service1": "Direção Criativa",
+        "service2": "Implementação 3D",
+        "service3": "Dev Full-Stack",
+        "contact": "Vamos Conversar"
+    },
+    "footer": {
+        "studio": "Estúdio",
+        "social": "Social",
+        "legal": "Legal",
+        "rights": "Todos os direitos reservados."
+    },
+    "about": {
+        "me": {
+            "greeting": "Olá! Eu sou Henrico G. David",
+            "headline": "Um Designer que",
+            "highlight": "julga o livro pela capa...",
+            "sub": "Porque se a capa não te impressionar, o que mais vai?",
+            "role": "Sou Web Designer & Desenvolvedor",
+            "roleHighlight": "Cinematográfico",
+            "current": "Atualmente, construo legados digitais na",
+            "company": "Pontus Corp",
+            "bio": "Um Designer UI/UX e Desenvolvedor Full-Stack autodidata, obcecado por detalhes. Acredito que o design não é apenas como parece, mas como funciona e como faz você se sentir. Crio experiências digitais que não apenas convertem, mas marcam a memória."
+        }
+    },
+    "services": {
+        "title": "O QUE FAZEMOS",
+        "branding": {
+            "title": "Identidade de Marca",
+            "desc": "Estratégia visual que define o futuro da sua empresa."
+        },
+        "development": {
+            "title": "Desenvolvimento",
+            "desc": "Aplicações web robustas, escaláveis e de alta performance."
+        },
+        "design": {
+            "title": "Design UI/UX",
+            "desc": "Interfaces intuitivas que encantam e convertem."
+        },
+        "consulting": {
+            "title": "Consultoria Tech",
+            "desc": "Auditoria e arquitetura para escalar seu negócio digital."
+        },
+        "method": {
+            "title": "O Processo",
+            "desc": "Do caos à clareza.",
+            "steps": {
+                "discovery": {
+                    "title": "Descoberta",
+                    "desc": "Mergulho profundo em objetivos, público e cenário de mercado."
+                },
+                "strategy": {
+                    "title": "Estratégia",
+                    "desc": "Definindo o roteiro visual e técnico para sua marca."
+                },
+                "execution": {
+                    "title": "Execução",
+                    "desc": "Sprints ágeis com feedback contínuo para perfeição."
+                },
+                "launch": {
+                    "title": "Lançamento",
+                    "desc": "Testes rigorosos e otimização para o mundo real."
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "INICIE UM",
+        "highlight": "PROJETO",
+        "form": {
+            "name": "Seu Nome (Opcional)",
+            "goal": "Qual seu objetivo?",
+            "placeholderName": "Como prefere ser chamado?",
+            "action": "Iniciar Conversa no WhatsApp",
+            "subjects": {
+                "quote": "Quero fazer um orçamento",
+                "portfolio": "Gostei do seu portfólio, quero criar minha página",
+                "site": "Gostaria de criar um site do zero",
+                "general": "Olá! Gostaria de conversar sobre um projeto"
+            }
+        },
+        "direct": {
+            "title": "Linha Direta",
+            "desc": "Consultas Gerais"
+        },
+        "hubs": "Hubs Globais"
+    },
+    "work": {
+        "title": "Trabalhos",
+        "highlight": "Selecionados",
+        "filters": {
+            "all": "Todos",
+            "web": "Web",
+            "mobile": "Mobile",
+            "branding": "Branding"
+        },
+        "detail": {
+            "role": "Papel",
+            "client": "Cliente",
+            "year": "Ano",
+            "stack": "Tecnologia",
+            "challenge": "O Desafio",
+            "solution": "A Solução",
+            "next": "Próximo Projeto"
+        }
+    }
+}

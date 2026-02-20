@@ -1,0 +1,128 @@
+{
+    "header": {
+        "home": "Home",
+        "work": "Work",
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "hero": {
+        "subtitle": "Cinematic Digital Experiences",
+        "scroll": "Scroll to Explore"
+    },
+    "bento": {
+        "selectedWorks": "Selected Works",
+        "portfolio": "Portfolio",
+        "comingSoon": "Coming Soon",
+        "studio": "The Studio",
+        "about": "About",
+        "studioDesc": "We operate at the intersection of design, technology, and cinema.\n\nCrafting digital legacies for brands that dare to lead the future.",
+        "services": "Services",
+        "expertise": "Expertise",
+        "service1": "Creative Direction",
+        "service2": "3D Implementation",
+        "service3": "Full-Stack Dev",
+        "contact": "Let's Talk"
+    },
+    "footer": {
+        "studio": "Studio",
+        "social": "Social",
+        "legal": "Legal",
+        "rights": "All rights reserved.",
+        "designed": "Designed with Stitch."
+    },
+    "about": {
+        "me": {
+            "greeting": "Hello! I am Henrico G. David",
+            "headline": "A Designer who",
+            "highlight": "judges a book by its cover...",
+            "sub": "Because if the cover doesn't impress you, what else will?",
+            "role": "I am a Web Designer & Developer",
+            "roleHighlight": "Cinematic",
+            "current": "Currently building digital legacies at",
+            "company": "Pontus Corp",
+            "bio": "A self-taught UI/UX Designer and Full-Stack Developer, obsessed with details. I believe design is not just how it looks, but how it works and how it makes you feel. I create digital experiences that not only convert but leave a mark."
+        }
+    },
+    "services": {
+        "title": "WHAT WE DO",
+        "branding": {
+            "title": "Brand Identity",
+            "desc": "Visual strategy that defines your company's future."
+        },
+        "development": {
+            "title": "Development",
+            "desc": "Robust, scalable, and high-performance web applications."
+        },
+        "design": {
+            "title": "UI/UX Design",
+            "desc": "Intuitive interfaces that delight and convert."
+        },
+        "consulting": {
+            "title": "Tech Consulting",
+            "desc": "Audit and architecture to scale your digital business."
+        },
+        "method": {
+            "title": "The Process",
+            "desc": "From chaos to clarity.",
+            "steps": {
+                "discovery": {
+                    "title": "Discovery",
+                    "desc": "Deep dive into goals, audience, and market landscape."
+                },
+                "strategy": {
+                    "title": "Strategy",
+                    "desc": "Defining the visual and technical roadmap for your brand."
+                },
+                "execution": {
+                    "title": "Execution",
+                    "desc": "Agile sprints with continuous feedback for perfection."
+                },
+                "launch": {
+                    "title": "Launch",
+                    "desc": "Rigorous testing and optimization for the real world."
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "START A",
+        "highlight": "PROJECT",
+        "form": {
+            "name": "Your Name (Optional)",
+            "goal": "What is your goal?",
+            "placeholderName": "How should we call you?",
+            "action": "Start WhatsApp Chat",
+            "subjects": {
+                "quote": "I want a quote",
+                "portfolio": "I liked your portfolio, I want a page",
+                "site": "I want to create a site from scratch",
+                "general": "Hello! I'd like to discuss a project"
+            }
+        },
+        "direct": {
+            "title": "Direct Line",
+            "desc": "General Inquiries"
+        },
+        "hubs": "Global Hubs"
+    },
+    "work": {
+        "title": "Selected",
+        "highlight": "Works",
+        "filters": {
+            "all": "All",
+            "web": "Web",
+            "mobile": "Mobile",
+            "branding": "Branding"
+        },
+        "detail": {
+            "role": "Role",
+            "client": "Client",
+            "year": "Year",
+            "stack": "Stack",
+            "challenge": "The Challenge",
+            "solution": "The Solution",
+            "next": "Next Project"
+        }
+    }
+}
