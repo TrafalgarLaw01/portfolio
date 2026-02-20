@@ -32,43 +32,16 @@
         "designed": "Diseñado con Stitch."
     },
     "about": {
-        "manifesto": {
-            "title": "CREAMOS",
-            "highlight": "LEGADOS DIGITALES",
-            "desc": "Más allá del software, construimos los cimientos del mañana. En Pontus Corp, fusionamos precisión arquitectónica con audacia creativa."
-        },
-        "philosophy": {
-            "title": "Filosofía del Estudio",
-            "desc": "Nuestro enfoque se basa en la creencia de que las interfaces digitales deben ser tan duraderas como los monumentos físicos. Descartamos lo efímero en favor de lo esencial. Cada píxel es una decisión, cada interacción una conversación."
-        },
-        "stats": {
-            "deployments": "Implementaciones",
-            "countries": "Países",
-            "years": "Años",
-            "projects": "Proyectos",
-            "awards": "Premios",
-            "clients": "Clientes"
-        },
-        "team": {
-            "title": "El Equipo",
-            "desc": "Un colectivo de expertos multidisciplinarios.",
-            "marcus": "Arquitecto Fundador",
-            "elena": "Directora de Diseño"
-        },
-        "awards": {
-            "title": "Reconocimiento",
-            "award1": "Mejor Ejecución Técnica",
-            "award2": "Líder Categoría UX/UI",
-            "award3": "Innovación en Fintech"
-        },
-        "journey": {
-            "title": "La Jornada",
-            "year1": "Génesis del Estudio",
-            "desc1": "Fundado en Neo-Tokio con la visión de redefinir la capa de interfaz.",
-            "year2": "Iniciativa Museo Digital",
-            "desc2": "Ganó el Premio Internacional por la exposición interactiva 'Historia de los Píxeles'.",
-            "year3": "Expansión a IA",
-            "desc3": "Lanzamiento de la arquitectura central Pontus-Neural para empresas globales."
+        "me": {
+            "greeting": "¡Hola! Soy Henrico G. David",
+            "headline": "Un Diseñador que",
+            "highlight": "juzga un libro por su portada...",
+            "sub": "Porque si la portada no te impresiona, ¿qué más lo hará?",
+            "role": "Soy Diseñador Web & Desarrollador",
+            "roleHighlight": "Cinematográfico",
+            "current": "Actualmente, construyo legados digitales en",
+            "company": "Pontus Corp",
+            "bio": "Un Diseñador UI/UX y Desarrollador Full-Stack autodidacta, obsesionado con los detalles. Creo que el diseño no es solo cómo se ve, sino cómo funciona y cómo te hace sentir. Creo experiencias digitales que no solo convierten, sino que dejan huella en la memoria."
         }
     },
     "services": {
