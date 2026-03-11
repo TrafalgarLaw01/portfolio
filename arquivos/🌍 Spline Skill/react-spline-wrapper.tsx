@@ -43,7 +43,7 @@ export default function SplineBackground({
   const [splineLoaded, setSplineLoaded] = useState(false);
   const [splineFailed, setSplineFailed] = useState(false);
   const [canLoad, setCanLoad] = useState(false);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setCanLoad(shouldLoadSpline(mobileBreakpoint));
@@ -59,11 +59,17 @@ export default function SplineBackground({
       }
     }, 8000);
 
-    return () => clearTimeout(timeoutRef.current);
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
   }, [canLoad, splineLoaded]);
 
   function onLoad() {
-    clearTimeout(timeoutRef.current);
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
     setSplineLoaded(true);
   }
 
