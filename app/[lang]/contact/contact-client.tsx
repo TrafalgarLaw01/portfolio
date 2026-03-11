@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { MagneticButton } from '@/components/ui/magnetic-button'
+import { LiquidButton } from '@/components/ui/liquid-glass-button'
 import { ArrowRight, Mail, MapPin } from 'lucide-react'
 import * as React from 'react'
 
@@ -113,11 +114,11 @@ function ContactForm({ dict }: { dict: any }) {
 
             <div className="pt-4">
                 <MagneticButton>
-                    <button type="submit" className="group relative z-10 px-8 py-5 bg-[#25D366] hover:bg-[#20bd5a] text-black font-bold rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(37,211,102,0.3)] hover:shadow-[0_0_50px_rgba(37,211,102,0.5)] flex items-center gap-3 w-full justify-center text-lg">
-                        <WhatsAppIcon className="w-6 h-6 fill-black" />
+                    <LiquidButton type="submit" size="xxl" className="group w-full text-white font-bold text-lg flex items-center gap-3 justify-center">
+                        <WhatsAppIcon className="w-6 h-6 fill-white" />
                         {dict.form.action}
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    </LiquidButton>
                 </MagneticButton>
             </div>
         </form>

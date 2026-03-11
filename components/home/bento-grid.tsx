@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import { MagneticButton } from '@/components/ui/magnetic-button'
+import { LiquidButton } from '@/components/ui/liquid-glass-button'
 
 interface BentoItemProps {
     title: string
@@ -24,7 +25,7 @@ function BentoItem({ title, subtitle, className, children, delay = 0, image, hre
             viewport={{ once: true, margin: "-10%" }}
             transition={{ duration: 0.6, delay }}
             className={cn(
-                "group relative overflow-hidden rounded-3xl border border-white/5 bg-zinc-900/50 hover:bg-zinc-900/80 transition-all duration-500 h-full",
+                "group relative overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-md hover:bg-white/[0.06] transition-all duration-500 h-full",
                 className
             )}
         >
@@ -35,24 +36,24 @@ function BentoItem({ title, subtitle, className, children, delay = 0, image, hre
                         src={image}
                         alt={title}
                         fill
-                        className="object-cover opacity-60 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
+                        className="object-cover opacity-50 group-hover:opacity-35 group-hover:scale-105 transition-all duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
                 </div>
             )}
 
-            {/* Hover Gradient Effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+            {/* Hover Glow Effect */}
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
 
             <div className="relative z-10 h-full p-8 flex flex-col">
                 {children}
                 <div className="mt-auto">
                     {subtitle && (
-                        <p className="text-xs font-bold text-blue-400 mb-2 tracking-widest uppercase">
+                        <p className="text-xs font-bold text-cyan-400 mb-2 tracking-widest uppercase">
                             {subtitle}
                         </p>
                     )}
-                    <h3 className="text-3xl font-bold text-white tracking-tight leading-tight group-hover:text-blue-100 transition-colors">
+                    <h3 className="text-3xl font-bold text-white tracking-tight leading-tight group-hover:text-cyan-50 transition-colors">
                         {title}
                     </h3>
                 </div>
@@ -76,7 +77,7 @@ export function BentoGrid({ dict, lang }: { dict: any, lang: string }) {
         <section className="py-32 px-4 md:px-8 max-w-[1400px] mx-auto bg-black relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[400px]">
 
-                {/* Large Feature - Selected Works (Takes up 8 columns) */}
+                {/* Large Feature - Selected Works */}
                 <BentoItem
                     title={dict.selectedWorks}
                     subtitle={dict.portfolio}
@@ -85,8 +86,7 @@ export function BentoGrid({ dict, lang }: { dict: any, lang: string }) {
                     image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
                     href={`/${lang}/work`}
                 >
-                    {/* Abstract geometric decoration instead of missing image */}
-                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
+                    <div className="absolute top-4 right-4 glass px-4 py-2 rounded-full">
                         <span className="text-xs text-white font-medium">{dict.comingSoon}</span>
                     </div>
                 </BentoItem>
@@ -105,17 +105,17 @@ export function BentoGrid({ dict, lang }: { dict: any, lang: string }) {
                                     src="/images/memoji.png"
                                     alt="Henrico Memoji"
                                     fill
-                                    className="object-contain drop-shadow-[0_0_25px_rgba(59,130,246,0.6)] transform hover:scale-110 transition-transform duration-500"
+                                    className="object-contain drop-shadow-[0_0_25px_rgba(0,210,255,0.5)] transform hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
                         </div>
                         <div className="space-y-6 mt-4">
                             <p className="text-gray-100 text-2xl md:text-3xl leading-snug font-serif italic text-center">
-                                "{dict.aboutIntro}"
+                                &ldquo;{dict.aboutIntro}&rdquo;
                             </p>
                             <div className="flex flex-col items-center gap-3">
-                                <div className="h-px w-24 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-                                <p className="text-blue-400 text-sm font-bold tracking-widest uppercase text-center">
+                                <div className="h-px w-24 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+                                <p className="text-cyan-400 text-sm font-bold tracking-widest uppercase text-center">
                                     {dict.aboutDetails}
                                 </p>
                             </div>
@@ -123,7 +123,7 @@ export function BentoGrid({ dict, lang }: { dict: any, lang: string }) {
                     </div>
                 </BentoItem>
 
-                {/* Medium Feature - Services (Takes up 4 columns) */}
+                {/* Services */}
                 <BentoItem
                     title={dict.services}
                     subtitle={dict.expertise}
@@ -133,30 +133,32 @@ export function BentoGrid({ dict, lang }: { dict: any, lang: string }) {
                 >
                     <ul className="mt-6 space-y-3 text-gray-400">
                         <li className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)]" /> {dict.service1}
+                            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(0,210,255,0.6)]" /> {dict.service1}
                         </li>
                         <li className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(139,92,246,0.8)]" /> {dict.service2}
+                            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(0,210,255,0.6)]" /> {dict.service2}
                         </li>
                         <li className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_10px_rgba(16,185,129,0.8)]" /> {dict.service3}
+                            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(0,210,255,0.6)]" /> {dict.service3}
                         </li>
                     </ul>
                 </BentoItem>
 
-                {/* Small Feature - Contact (Takes up 4 columns) */}
+                {/* Contact CTA */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-10%" }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/5 bg-gradient-to-br from-blue-900/20 to-purple-900/20 hover:border-blue-500/30 transition-all duration-500 flex items-center justify-center min-h-[400px]"
+                    className="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-br from-cyan-900/15 to-transparent hover:border-cyan-500/30 transition-all duration-500 flex items-center justify-center min-h-[400px]"
                 >
                     <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-0" />
                     <MagneticButton>
-                        <Link href={`/${lang}/contact`} className="relative z-10 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(37,99,235,0.5)] group-hover:scale-110 flex items-center gap-2">
-                            {dict.contact} <span className="text-xl">&rarr;</span>
-                        </Link>
+                        <LiquidButton size="xl" className="text-white font-bold">
+                            <Link href={`/${lang}/contact`} className="flex items-center gap-2">
+                                {dict.contact} <span className="text-xl">&rarr;</span>
+                            </Link>
+                        </LiquidButton>
                     </MagneticButton>
                 </motion.div>
             </div>

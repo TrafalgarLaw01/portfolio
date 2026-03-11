@@ -32,6 +32,10 @@ export default async function RootLayout({
   const { lang } = await params;
   return (
     <html lang={lang} className="dark">
+      <head>
+        {/* Preload Spline scene for faster 3D load (Spline Skill: PERFORMANCE) */}
+        <link rel="preload" href="/spline/scene-clean.splinecode" as="fetch" crossOrigin="anonymous" />
+      </head>
       <body className={cn(
         "min-h-screen bg-background text-foreground font-sans antialiased",
         inter.variable,

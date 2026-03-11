@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { BentoGrid } from '@/components/home/bento-grid'
+import { LiquidButton } from '@/components/ui/liquid-glass-button'
 import { useState } from 'react'
 
 const categories = ['All', 'Web', 'Mobile', 'Branding']
@@ -23,16 +24,17 @@ export function WorkClient({ dict, bentoDict, lang }: { dict: any, bentoDict: an
 
                 <div className="flex flex-wrap gap-2">
                     {Object.entries(dict.filters).map(([key, label]) => (
-                        <button
+                        <LiquidButton
                             key={key}
-                            onClick={() => setFilter(key)} // This logic needs to actually filter the grid later
-                            className={`px-6 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${filter === key
-                                ? 'bg-blue-600 border-blue-600 text-white shadow-[0_0_15px_rgba(37,99,235,0.5)]'
-                                : 'bg-transparent border-white/10 text-gray-400 hover:border-white/30 hover:text-white'
+                            size="sm"
+                            onClick={() => setFilter(key)}
+                            className={`text-sm font-medium ${filter === key
+                                    ? 'text-white'
+                                    : 'text-gray-400 hover:text-white'
                                 }`}
                         >
                             {label as string}
-                        </button>
+                        </LiquidButton>
                     ))}
                 </div>
             </motion.div>
