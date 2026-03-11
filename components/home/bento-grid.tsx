@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { MagneticButton } from '@/components/ui/magnetic-button'
 import { LiquidButton } from '@/components/ui/liquid-glass-button'
+import { GlassFilter } from '@/components/ui/liquid-glass-card'
 
 interface BentoItemProps {
     title: string
@@ -25,9 +26,12 @@ function BentoItem({ title, subtitle, className, children, delay = 0, image, hre
             viewport={{ once: true, margin: "-10%" }}
             transition={{ duration: 0.6, delay }}
             className={cn(
-                "group relative overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-md hover:bg-white/[0.06] transition-all duration-500 h-full",
+                "group relative overflow-hidden h-full rounded-3xl border border-white/10",
+                "bg-transparent text-white shadow-[0_0_6px_rgba(0,0,0,0.03),0_2px_6px_rgba(0,0,0,0.08),inset_3px_3px_0.5px_-3px_rgba(0,0,0,0.9),inset_-3px_-3px_0.5px_-3px_rgba(0,0,0,0.85),inset_1px_1px_1px_-0.5px_rgba(0,0,0,0.6),inset_-1px_-1px_1px_-0.5px_rgba(0,0,0,0.6),inset_0_0_6px_6px_rgba(0,0,0,0.12),inset_0_0_2px_2px_rgba(0,0,0,0.06),0_0_12px_rgba(255,255,255,0.15)]",
+                "transition-all duration-500 hover:shadow-[0_0_8px_rgba(0,0,0,0.03),0_2px_6px_rgba(0,0,0,0.08),inset_3px_3px_0.5px_-3.5px_rgba(255,255,255,0.09),inset_-3px_-3px_0.5px_-3.5px_rgba(255,255,255,0.85),inset_1px_1px_1px_-0.5px_rgba(255,255,255,0.6),inset_-1px_-1px_1px_-0.5px_rgba(255,255,255,0.6),inset_0_0_6px_6px_rgba(255,255,255,0.12),inset_0_0_2px_2px_rgba(255,255,255,0.06),0_0_12px_rgba(0,0,0,0.15)]",
                 className
             )}
+            style={{ backdropFilter: 'url("#container-glass")' }}
         >
             {/* Background Image if provided */}
             {image && (
@@ -75,6 +79,7 @@ function BentoItem({ title, subtitle, className, children, delay = 0, image, hre
 export function BentoGrid({ dict, lang }: { dict: any, lang: string }) {
     return (
         <section className="py-32 px-4 md:px-8 max-w-[1400px] mx-auto bg-black relative z-10">
+            <GlassFilter />
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[400px]">
 
                 {/* Large Feature - Selected Works */}
@@ -150,11 +155,16 @@ export function BentoGrid({ dict, lang }: { dict: any, lang: string }) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-10%" }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-br from-cyan-900/15 to-transparent hover:border-cyan-500/30 transition-all duration-500 flex items-center justify-center min-h-[400px]"
+                    className={cn(
+                        "md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 flex items-center justify-center min-h-[400px]",
+                        "bg-transparent text-white shadow-[0_0_6px_rgba(0,0,0,0.03),0_2px_6px_rgba(0,0,0,0.08),inset_3px_3px_0.5px_-3px_rgba(0,0,0,0.9),inset_-3px_-3px_0.5px_-3px_rgba(0,0,0,0.85),inset_1px_1px_1px_-0.5px_rgba(0,0,0,0.6),inset_-1px_-1px_1px_-0.5px_rgba(0,0,0,0.6),inset_0_0_6px_6px_rgba(0,0,0,0.12),inset_0_0_2px_2px_rgba(0,0,0,0.06),0_0_12px_rgba(255,255,255,0.15)]",
+                        "transition-all duration-500 hover:shadow-[0_0_8px_rgba(0,0,0,0.03),0_2px_6px_rgba(0,0,0,0.08),inset_3px_3px_0.5px_-3.5px_rgba(255,255,255,0.09),inset_-3px_-3px_0.5px_-3.5px_rgba(255,255,255,0.85),inset_1px_1px_1px_-0.5px_rgba(255,255,255,0.6),inset_-1px_-1px_1px_-0.5px_rgba(255,255,255,0.6),inset_0_0_6px_6px_rgba(255,255,255,0.12),inset_0_0_2px_2px_rgba(255,255,255,0.06),0_0_12px_rgba(0,0,0,0.15)]"
+                    )}
+                    style={{ backdropFilter: 'url("#container-glass")' }}
                 >
-                    <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-0" />
+                    <div className="absolute inset-0 bg-black/20 z-0" />
                     <MagneticButton>
-                        <LiquidButton size="xl" className="text-white font-bold">
+                        <LiquidButton size="xl" className="text-white font-bold relative z-10 border border-white/10">
                             <Link href={`/${lang}/contact`} className="flex items-center gap-2">
                                 {dict.contact} <span className="text-xl">&rarr;</span>
                             </Link>

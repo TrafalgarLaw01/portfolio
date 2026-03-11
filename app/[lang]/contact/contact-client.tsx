@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { MagneticButton } from '@/components/ui/magnetic-button'
 import { LiquidButton } from '@/components/ui/liquid-glass-button'
+import { GlassFilter } from '@/components/ui/liquid-glass-card'
 import { ArrowRight, Mail, MapPin } from 'lucide-react'
 import * as React from 'react'
 
@@ -133,9 +134,12 @@ function ContactCard({ children, className, delay = 0 }: { children: React.React
             viewport={{ once: true, margin: "-10%" }}
             transition={{ duration: 0.6, delay }}
             className={cn(
-                "bg-zinc-900/50 border border-white/5 rounded-3xl p-8 overflow-hidden hover:border-white/10 transition-colors relative group",
+                "group relative overflow-hidden rounded-3xl p-8 border border-white/10",
+                "bg-transparent text-white shadow-[0_0_6px_rgba(0,0,0,0.03),0_2px_6px_rgba(0,0,0,0.08),inset_3px_3px_0.5px_-3px_rgba(0,0,0,0.9),inset_-3px_-3px_0.5px_-3px_rgba(0,0,0,0.85),inset_1px_1px_1px_-0.5px_rgba(0,0,0,0.6),inset_-1px_-1px_1px_-0.5px_rgba(0,0,0,0.6),inset_0_0_6px_6px_rgba(0,0,0,0.12),inset_0_0_2px_2px_rgba(0,0,0,0.06),0_0_12px_rgba(255,255,255,0.15)]",
+                "transition-all duration-500 hover:shadow-[0_0_8px_rgba(0,0,0,0.03),0_2px_6px_rgba(0,0,0,0.08),inset_3px_3px_0.5px_-3.5px_rgba(255,255,255,0.09),inset_-3px_-3px_0.5px_-3.5px_rgba(255,255,255,0.85),inset_1px_1px_1px_-0.5px_rgba(255,255,255,0.6),inset_-1px_-1px_1px_-0.5px_rgba(255,255,255,0.6),inset_0_0_6px_6px_rgba(255,255,255,0.12),inset_0_0_2px_2px_rgba(255,255,255,0.06),0_0_12px_rgba(0,0,0,0.15)]",
                 className
             )}
+            style={{ backdropFilter: 'url("#container-glass")' }}
         >
             {children}
         </motion.div>
@@ -144,7 +148,9 @@ function ContactCard({ children, className, delay = 0 }: { children: React.React
 
 export function ContactClient({ dict }: { dict: any }) {
     return (
-        <main className="min-h-screen bg-black text-white selection:bg-purple-500/30">
+        <main className="min-h-screen bg-black text-white selection:bg-purple-500/30 pt-32 pb-20 relative z-10">
+            <GlassFilter />
+            {/* Background Effects */}
             <section className="pt-32 pb-16 px-6 md:px-12 max-w-[1400px] mx-auto text-center md:text-left">
                 <motion.h1
                     initial={{ opacity: 0, x: -20 }}
