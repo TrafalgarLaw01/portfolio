@@ -177,7 +177,7 @@ export function ContactClient({ dict }: { dict: any }) {
                                 <h3 className="text-lg font-bold">{dict.direct.title}</h3>
                             </div>
                             <p className="text-gray-400 mb-2">{dict.direct.desc}</p>
-                            <a href="mailto:hello@pontus.corp" className="text-2xl font-medium text-white hover:text-purple-400 transition-colors">hello@pontus.corp</a>
+                            <a href="mailto:henrico@pontus.digital" className="text-2xl font-medium text-white hover:text-purple-400 transition-colors">henrico@pontus.digital</a>
                         </ContactCard>
 
                         {/* Global Hubs */}
