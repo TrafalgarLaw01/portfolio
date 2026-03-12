@@ -5,6 +5,8 @@ import { SmoothScroll } from "@/components/ui/smooth-scroll";
 import { cn } from "@/lib/utils";
 import { Locale, i18n } from "@/i18n-config";
 
+import { SpotlightCursor } from "@/components/ui/spotlight-cursor";
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
 const caveat = Caveat({ subsets: ["latin"], variable: "--font-handwriting" });
@@ -42,6 +44,7 @@ export default async function RootLayout({
         playfair.variable,
         caveat.variable
       )}>
+        <SpotlightCursor />
         <SmoothScroll>
           {children}
         </SmoothScroll>
