@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { MagneticButton } from '@/components/ui/magnetic-button'
 import { LiquidButton } from '@/components/ui/liquid-glass-button'
 import { GlassFilter } from '@/components/ui/liquid-glass-card'
+import { ContactCTAButton } from '@/components/ui/button-1'
 
 interface BentoItemProps {
     title: string
@@ -163,13 +164,7 @@ export function BentoGrid({ dict, lang }: { dict: any, lang: string }) {
                     style={{ backdropFilter: 'url("#container-glass")' }}
                 >
                     <div className="absolute inset-0 bg-black/20 z-0" />
-                    <MagneticButton>
-                        <LiquidButton size="xl" className="text-white font-bold relative z-10 border border-white/10 rounded-full">
-                            <Link href={`/${lang}/contact`} className="flex items-center gap-2">
-                                {dict.contact} <span className="text-xl">&rarr;</span>
-                            </Link>
-                        </LiquidButton>
-                    </MagneticButton>
+                    <ContactCTAButton text={dict.contact} href={`/${lang}/contact`} />
                 </motion.div>
             </div>
         </section>
