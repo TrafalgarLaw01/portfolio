@@ -164,7 +164,7 @@ export function BentoGrid({ dict, lang }: { dict: any, lang: string }) {
                 >
                     <div className="absolute inset-0 bg-black/20 z-0" />
                     <MagneticButton>
-                        <LiquidButton size="xl" className="text-white font-bold relative z-10 border border-white/10">
+                        <LiquidButton size="xl" className="text-white font-bold relative z-10 border border-white/10 rounded-full">
                             <Link href={`/${lang}/contact`} className="flex items-center gap-2">
                                 {dict.contact} <span className="text-xl">&rarr;</span>
                             </Link>
